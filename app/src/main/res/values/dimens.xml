@@ -2,4 +2,5 @@
 <resources>
     <dimen name = "dimens_20sp">20sp</dimen>
     <dimen name = "dimens_17sp">17sp</dimen>
+    <dimen name = "dimens_18sp">18sp</dimen>
 </resources>
