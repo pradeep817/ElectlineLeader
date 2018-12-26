@@ -138,6 +138,7 @@ class RegisterActivity : AppCompatActivity() {
             updateLabel()
         }
         val datePickerDialog = DatePickerDialog(
+            
             this@RegisterActivity, date, myCalendar
                 .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
             myCalendar.get(Calendar.DAY_OF_MONTH)
