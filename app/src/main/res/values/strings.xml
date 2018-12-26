@@ -6,6 +6,8 @@
     <string name = "email">Email</string>
     <string name = "create_an_account">Create an Account</string>
     <string name = "register">Register</string>
-    <string name = "name">Name</string>
+    <string name = "f_name">First Name</string>
+    <string name = "l_name">Last Name</string>
+    <string name="dob">Date of birth</string>
     <string name = "phone_number">Phone number</string>
 </resources>

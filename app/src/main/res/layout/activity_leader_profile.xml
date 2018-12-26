@@ -70,6 +70,8 @@
     <LinearLayout
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
         android:layout_marginTop="10sp">
 
 
@@ -99,6 +101,8 @@
                 android:layout_height = "wrap_content"
                 android:text="Booth management"
                 android:textAlignment="center"
+                android:layout_marginTop="5sp"
+                android:fontFamily="@font/poppins_medium"
                 android:textSize="@dimen/dimens_17sp"/>
             </LinearLayout>
 
@@ -123,13 +127,15 @@
                 <ImageView
                     android:layout_width = "45sp"
                     android:layout_height = "45sp"
-                    android:src="@drawable/ic_person_managment"/>
+                    android:src="@drawable/ic_team"/>
 
                 <TextView
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
-                    android:text="Person management"
+                    android:text="Team management"
+                    android:fontFamily="@font/poppins_medium"
                     android:textAlignment="center"
+                    android:layout_marginTop="5sp"
                     android:textSize="@dimen/dimens_17sp"/>
             </LinearLayout>
 
@@ -142,6 +148,8 @@
     <LinearLayout
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
         android:layout_marginTop="10sp">
 
 
@@ -164,13 +172,15 @@
                 <ImageView
                     android:layout_width = "45sp"
                     android:layout_height = "45sp"
-                    android:src="@drawable/ic_management"/>
+                    android:src="@drawable/ic_agenda"/>
 
                 <TextView
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
-                    android:text="Booth management"
+                    android:text="Agenda"
                     android:textAlignment="center"
+                    android:layout_marginTop="5sp"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="@dimen/dimens_17sp"/>
             </LinearLayout>
 
@@ -196,13 +206,15 @@
                 <ImageView
                     android:layout_width = "45sp"
                     android:layout_height = "45sp"
-                    android:src="@drawable/ic_person_managment"/>
+                    android:src="@drawable/ic_analysis"/>
 
                 <TextView
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
-                    android:text="Person management"
+                    android:text="TODO"
                     android:textAlignment="center"
+                    android:layout_marginTop="5sp"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="@dimen/dimens_17sp"/>
             </LinearLayout>
 
