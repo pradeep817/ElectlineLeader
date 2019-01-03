@@ -40,15 +40,15 @@
             android:layout_height = "wrap_content"
             android:layout_weight=".5"
             android:clickable="true"
+            android:gravity="right"
             android:id="@+id/create_account"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width = "wrap_content"
+                android:layout_width = "match_parent"
                 android:layout_height = "wrap_content"
                 android:fontFamily = "@font/poppins_bold"
                 android:text = "Create an Account"
-                android:textAlignment="center"
                 android:textColor = "@color/colorgrey"
                 android:textSize = "@dimen/dimens_17sp" />
 
@@ -98,6 +98,7 @@
                 android:layout_width = "match_parent"
                 android:layout_height = "wrap_content"
                 android:id="@+id/login_pass"
+                android:inputType="textPassword"
                 android:hint = "@string/password" />
 
         </android.support.design.widget.TextInputLayout>
@@ -124,9 +125,10 @@
             android:elevation="10sp"
             android:clickable="true"
             android:id="@+id/login"
-            android:background="@drawable/button_selector"
+            android:background="@drawable/button_background"
             android:text="@string/signin"
             android:textColor="@color/colorWhite"
+            android:layout_margin="@dimen/dimens_10sp"
             android:textSize="@dimen/dimens_17sp"/>
 
     </LinearLayout>

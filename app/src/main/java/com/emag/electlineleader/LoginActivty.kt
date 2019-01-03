@@ -5,6 +5,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.android.volley.DefaultRetryPolicy
 import com.android.volley.Request
 import com.android.volley.Response
@@ -17,6 +18,7 @@ import java.lang.Exception
 class LoginActivty : AppCompatActivity() {
 
     private var pDialog: ProgressDialog?= null
+    private var prefrenceManager:PrefrenceManager?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_activty)
@@ -26,6 +28,8 @@ class LoginActivty : AppCompatActivity() {
         pDialog!!.setMessage("Please wait.....")
         pDialog!!.setCancelable(false)
 
+
+        prefrenceManager = PrefrenceManager(this)
 
         login.setOnClickListener {
 
@@ -57,6 +61,25 @@ class LoginActivty : AppCompatActivity() {
                     JsonObjectRequest(Request.Method.POST, ConstantURL.get_login, jsonObject, Response.Listener {
                         pDialog!!.cancel()
                         Log.e("response",it.toString())
+
+                        var status:Int = it.getInt("status")
+                        var msg:String = it.getString("msg")
+
+                        if (status == 3004){
+                            Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(this,LeaderProfile::class.java))
+                            prefrenceManager?.putPaymentStatus(true)
+                            prefrenceManager?.setLoginStatus(true,email)
+                            finish()
+                        }else if (status == 400){
+                            Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(this,LeaderProfile::class.java))
+                            prefrenceManager?.putPaymentStatus(false)
+                            prefrenceManager?.setLoginStatus(true,email)
+                            finish()
+                        }else{
+                            Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
+                        }
                     }, Response.ErrorListener {
                         Log.e("error",it.toString())
                         pDialog!!.cancel()

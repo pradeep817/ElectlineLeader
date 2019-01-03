@@ -5,9 +5,11 @@ class ConstantURL{
 
     companion object {
         val LIVEURL: String="http://43.224.136.89:8098/admin/"
-        val BASEURL:String="http://192.168.0.215:8098/politician/"
-        val get_login:String= BASEURL+"get-login"
+      const val BASEURL:String="http://192.168.0.102:8098/politician/"
+               //const val BASEURL:String="http://192.168.0.215:8098/politician/"
+        const val get_login:String= BASEURL+"get-login"
 
+        const val poltyRegData:String = BASEURL+"poltyRegData"
 
         val GET_STATE: String= LIVEURL+"indian-states"
 
@@ -16,5 +18,7 @@ class ConstantURL{
         val GET_VIDHANSABHA: String = LIVEURL+"vidhansabha/loksabha/"
 
         val GET_PARTY: String= LIVEURL+"all_party"
+
+        val GET_QUESTION:String = BASEURL+"resetSecQues"
     }
 }

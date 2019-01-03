@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical">
+
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text="Select any one security question "
+        android:textSize="@dimen/dimens_20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/dimens_10sp"/>
+
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dimens_8sp">
+
+        <Spinner
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id="@+id/question_spinner"
+            android:padding="@dimen/dimens_15sp"/>
+
+
+            <EditText
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:hint="Write answer"
+                android:layout_marginTop="@dimen/dimens_10sp"
+                android:background="@drawable/edittext_baclground"
+                android:padding="@dimen/dimens_13sp"
+                android:id="@+id/answer"
+                />
+
+
+
+        <Button
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_marginTop="@dimen/dimens_15sp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dimens_20sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
