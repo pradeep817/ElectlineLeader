@@ -1,17 +1,17 @@
 <resources>
-    <string name = "app_name">ElectlineLeader</string>
-    <string name = "login">Login</string>
-    <string name = "signin">Sign in</string>
-    <string name = "password">Password</string>
-    <string name = "email">Email</string>
-    <string name = "create_an_account">Create an Account</string>
-    <string name = "register">Register</string>
-    <string name = "f_name">First Name</string>
-    <string name = "l_name">Last Name</string>
-    <string name = "dob">Date of birth</string>
-    <string name = "phone_number">Phone number</string>
+    <string name="app_name">ElectlineLeader</string>
+    <string name="login">Login</string>
+    <string name="signin">Sign in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="register">Register</string>
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="dob">Date of birth</string>
+    <string name="phone_number">Phone number</string>
 
-    <string-array name = "questions">
+    <string-array name="questions">
 
         <item>In what city were you born</item>
         <item>What is your favorite movie?</item>
@@ -19,6 +19,6 @@
 
     </string-array>
 
-    <string name = "Rs">\u20B9 1000</string>
-    <string name = "logout">Logout</string>
+    <string name="Rs">\u20B9 1000</string>
+    <string name="logout">Logout</string>
 </resources>

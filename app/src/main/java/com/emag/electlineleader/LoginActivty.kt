@@ -38,6 +38,8 @@ class LoginActivty : AppCompatActivity() {
 
 
         create_account.setOnClickListener { startActivity(Intent(this, RegisterActivity::class.java)) }
+
+        forgot_password.setOnClickListener { startActivity(Intent(this,ForgotPassword::class.java)) }
     }
 
     private fun getLogin() {

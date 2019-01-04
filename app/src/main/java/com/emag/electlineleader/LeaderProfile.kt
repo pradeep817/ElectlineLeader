@@ -18,6 +18,9 @@ import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_leader_profile.*
 import org.json.JSONObject
 
+
+
+
 class LeaderProfile : AppCompatActivity() {
 
     private var prefrenceManager: PrefrenceManager? = null
@@ -25,7 +28,6 @@ class LeaderProfile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_leader_profile)
-
 
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowHomeEnabled(true)
@@ -101,6 +103,7 @@ class LeaderProfile : AppCompatActivity() {
 
                 leader_name.text = poltyFirstName + " " + poltyLastName
                 leader_vidhansabha.text = vidhanSabhaName
+                leader_party.text = partyName
 
 
                 val data = android.util.Base64.decode(poltyImg, 0)
@@ -130,4 +133,6 @@ class LeaderProfile : AppCompatActivity() {
         queue.add(stringRequest)
 
     }
+
+
 }

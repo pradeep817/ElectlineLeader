@@ -20,5 +20,7 @@ class ConstantURL{
         val GET_PARTY: String= LIVEURL+"all_party"
 
         val GET_QUESTION:String = BASEURL+"resetSecQues"
+
+        val RESET_PASSWORD:String = BASEURL+"reset-pass"
     }
 }
